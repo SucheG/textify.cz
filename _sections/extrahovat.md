@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /extrahovat/
+title: Extrahovat
 ---
 <div>
   <h1>extrahovat</h1>
