@@ -21,6 +21,12 @@
             <li>{{ item }}</li>
          {% endfor %}
         
+        {% for item in site.sections %}
+          <li>
+            <a href="{{ item.url }}">{{ item.url }}</a>
+          </li>
+        {% endfor %}
+        
         
       </ul>
       
