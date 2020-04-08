@@ -2,6 +2,7 @@
 layout: default
 permalink: /extrahovat/
 title: Extrahovat
+fa_icon: fas fa-external-link-alt
 ---
 <div>
   <h1>extrahovat</h1>
