@@ -1,1 +1,8 @@
-
+collections:
+  sections:
+    output: true
+    permalink: /:name
+    
+  pages:
+    output: true
+    permalink: /:name
