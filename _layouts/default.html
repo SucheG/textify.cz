@@ -13,6 +13,7 @@
     .icon.is-large {
       display: block;
       margin: auto;
+      text-align: center;
     }
 
     .navbar-item.is-tab.is-active {
@@ -21,6 +22,11 @@
 
     .navbar-item {
       display: block;
+    }
+
+    .nav-item p {
+      min-width: 5rem;
+      text-align: center;
     }
   </style>
 </head>
@@ -45,7 +51,7 @@
           <div class="navbar-start"></div>
           <div class="navbar-end">
             {% for item in site.sections %}
-              <a class="navbar-item is-tab {% if item.url == page.url %} is-active{% endif %}" href="{{ item.url }}">
+              <a class="navbar-item is-tab{% if item.url == page.url %} is-active{% endif %}" href="{{ item.url }}">
                 <span class="icon is-large">
                   <i class="{{ item.fa_icon }} fa-2x"></i>
                 </span>
