@@ -1,2 +1,8 @@
 header_pages:
  - extrahovat.md
+
+
+collections:
+  sections:
+    output: true
+    permalink: /:name
