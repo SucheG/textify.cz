@@ -44,8 +44,10 @@
     <nav class="tabs is-small">
       <div class="container">
         <ul>
-          {% for item in site.sections %}
-            <li class="is-active"><a>Overview</a></li>
+          {% for item in site.pages %}
+            <li class="{% if item.url == page.url %}is-active{% endif %}">
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
           {% endfor %}
         </ul>
       </div>
