@@ -10,10 +10,18 @@
   <body>
   <section class="section">
     <div class="container">
+      
+      
       <ul>
          {% for item in site.data.nav.docs %}
             <li><a href="{{ item.url }}">{{ item.title }}</a></li>
          {% endfor %}
+        
+         {% for item in site.header_pages %}
+            <li>{{ item }}</li>
+         {% endfor %}
+        
+        
       </ul>
       
       {{ content }}
