@@ -5,4 +5,4 @@ header_pages:
 collections:
   sections:
     output: true
-    permalink: /:name/
+    permalink: /:name
