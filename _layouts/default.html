@@ -44,12 +44,9 @@
     <nav class="tabs is-small">
       <div class="container">
         <ul>
-          <li class="is-active"><a>Overview</a></li>
-          <li><a>Modifiers</a></li>
-          <li><a>Grid</a></li>
-          <li><a>Elements</a></li>
-          <li><a>Components</a></li>
-          <li><a>Layout</a></li>
+          {% for item in site.sections %}
+            <li class="is-active"><a>Overview</a></li>
+          {% endfor %}
         </ul>
       </div>
     </nav>
