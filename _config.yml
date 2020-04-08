@@ -6,6 +6,8 @@ header_pages:
 
 collections:
   sections:
+    output: true
+    permalink: /:name
     order:
       - test3.md
       - test4.md
