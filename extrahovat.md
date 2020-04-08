@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Režim
-permalink: /rezim/
+permalink: /extrahovat/
 ---
 <div>
   <h1>extrahovat</h1>
