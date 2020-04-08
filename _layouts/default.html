@@ -9,6 +9,22 @@
   <meta name="author" content="Textify.cz">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+  <style>
+    .icon.is-extra-large {
+      height: 4rem;
+      width: 4rem;
+      display: block;
+      margin: auto;
+    }
+
+    .navbar-item.is-tab.is-active {
+      border-bottom-width: 2px;
+    }
+
+    .navbar-item {
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
@@ -32,10 +48,10 @@
           <div class="navbar-end">
             {% for item in site.sections %}
               <a class="navbar-item is-tab {% if item.url == page.url %} is-active{% endif %}" href="{{ item.url }}">
-                <span class="icon is-large">
+                <span class="icon is-extra-large">
                   <i class="{{ item.fa_icon }} fa-3x"></i>
                 </span>
-                <span>{{ item.title }}</span>
+                <p>{{ item.title }}</p>
               </a>
             {% endfor %}
           </div>
