@@ -28,7 +28,7 @@
           <div class="navbar-start"></div>
           <div class="navbar-end">
             {% for item in site.sections %}
-              <a class="navbar-item is-tab {% if item.url == page.url %} is-active{% endif %}" href="{{ item.url }}">{{ item.url }}</a>
+              <a class="navbar-item is-tab {% if item.url == page.url %} is-active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
             {% endfor %}
           </div>
         </div>
