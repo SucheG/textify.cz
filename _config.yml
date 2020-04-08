@@ -1,8 +1,11 @@
 header_pages:
  - extrahovat.md
+ - test1.md
+ - test2.md
 
 
 collections:
-  sections:
-    output: true
-    permalink: /:name/
+  stranky:
+    order:
+      - test3.md
+      - test4.md
