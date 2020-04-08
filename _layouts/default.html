@@ -32,8 +32,8 @@
           <div class="navbar-end">
             {% for item in site.sections %}
               <a class="navbar-item is-tab {% if item.url == page.url %} is-active{% endif %}" href="{{ item.url }}">
-                <span class="icon">
-                  <i class="{{ item.fa_icon }}"></i>
+                <span class="icon is-large">
+                  <i class="{{ item.fa_icon }} fa-3x"></i>
                 </span>
                 <span>{{ item.title }}</span>
               </a>
