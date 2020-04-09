@@ -30,7 +30,6 @@
     }
 
 
-    
     /* https://github.com/jgthms/bulma/issues/1445 */
 
     .navbar,
@@ -60,7 +59,7 @@
     .navbar .container {
       display: flex;
     }
-    
+
   </style>
 </head>
 <body>
@@ -98,6 +97,19 @@
   </div>
   <div class="hero-body">
     <div class="container has-text-centered">
+      <div class="columns">
+        <div class="column">
+          <label>
+            <textarea class="textarea"></textarea>
+          </label>
+        </div>
+        <div class="column">
+          <label>
+            <textarea class="textarea"></textarea>
+          </label>
+        </div>
+      </div>
+
       {{ content }}
     </div>
   </div>
