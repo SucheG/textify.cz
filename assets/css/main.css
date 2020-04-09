@@ -1,4 +1,4 @@
-.icon.is-large {
+.navbar-menu .icon {
   display: block;
   margin: auto;
   text-align: center;
@@ -8,11 +8,11 @@
   border-bottom-width: 2px;
 }
 
-.navbar-item {
+.navbar-menu .navbar-item {
   display: block;
 }
 
-.navbar-item p {
+.navbar-menu .navbar-item p {
   min-width: 5rem;
   text-align: center;
 }
