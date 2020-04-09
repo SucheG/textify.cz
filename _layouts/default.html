@@ -76,10 +76,16 @@
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
-            <span class="icon has-text-link">
-              <i class="fas fa-pen-square fa-2x"></i>
-            </span>
-            <span class="logo">Textify</span>
+            <div class="columns is-gapless is-mobile">
+              <div class="column">
+                <span class="icon has-text-link">
+                  <i class="fas fa-pen-square fa-2x"></i>
+                </span>
+              </div>
+              <div class="column">
+                <span class="logo is-size-4">Textify</span>
+              </div>
+            </div>
           </a>
 
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -107,19 +113,6 @@
   </div>
   <div class="hero-body">
     <div class="container has-text-centered">
-      <div class="columns">
-        <div class="column">
-          <label>
-            <textarea class="textarea" rows="10"></textarea>
-          </label>
-        </div>
-        <div class="column">
-          <label>
-            <textarea class="textarea" rows="10"></textarea>
-          </label>
-        </div>
-      </div>
-
       {{ content }}
     </div>
   </div>
@@ -138,6 +131,5 @@
   </div>
 </section>
 
-<script src="/assets/js/main.js"></script>
 </body>
 </html>
