@@ -1,3 +1,7 @@
+exclude:
+  - .idea
+
+
 collections:
   sections:
     output: true
