@@ -2,6 +2,14 @@
 layout: default
 ---
 
+{% if page.ready != 1 %}
+<span class="icon is-large">
+  <i class="has-text-grey fas fa-tools fa-2x"></i>
+</span>
+<p>Na tomto nástroji se ještě pracuje.</p>
+<br>
+{% endif %}
+
 <div class="columns">
   <div class="column">
     <label>
