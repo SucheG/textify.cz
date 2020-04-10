@@ -36,8 +36,6 @@
   var textAreas = selectorToArray('textarea');
   var start = selectorToArray('.start')[0];
 
-  console.log(3);
-
   var RxList = {
     'obsahujici-cisla': /\S*\d+\S*/g,
     'telefon': /\+?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{3,6}/g,
@@ -63,6 +61,8 @@
       var values = text.match(rx);
       if (Array.isArray(values)) {
         set(values.join('\n'));
+      } else {
+        set('');
       }
     } else {
       alert('Zadejte vstupní text')
