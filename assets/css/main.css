@@ -41,6 +41,14 @@
   transform: scale(1.05);
 }
 
+.hero-body {
+  padding: 1rem;
+}
+
+.textarea:not([rows]) {
+  min-height: 30vh;
+}
+
 /* https://github.com/jgthms/bulma/issues/1445 */
 
 .navbar,

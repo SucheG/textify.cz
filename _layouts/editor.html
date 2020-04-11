@@ -2,23 +2,29 @@
 layout: default
 ---
 
-{% if page.ready != 1 %}
+{% if page.ready == 1 %}
+<div class="has-text-left">
+  <h1 class="title is-size-4">{{ page.title }}</h1>
+  <p class="subtitle is-size-6">{{ page.description }}</p>
+</div>
+{% else %}
 <span class="icon is-large">
   <i class="has-text-grey fas fa-tools fa-2x"></i>
 </span>
 <p>Na tomto nástroji se ještě pracuje.</p>
-<br>
 {% endif %}
+
+<br>
 
 <div class="columns">
   <div class="column">
     <label>
-      <textarea class="textarea" rows="10" placeholder="Vstupní text"></textarea>
+      <textarea class="textarea" placeholder="Vstupní text"></textarea>
     </label>
   </div>
   <div class="column">
     <label>
-      <textarea class="textarea" rows="10" readonly placeholder="Výsledek"></textarea>
+      <textarea class="textarea" readonly placeholder="Výsledek"></textarea>
     </label>
   </div>
 </div>
