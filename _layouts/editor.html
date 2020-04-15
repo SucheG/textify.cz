@@ -29,6 +29,30 @@ layout: default
   </div>
 </div>
 
-{{ content }}
+<div class="field is-grouped is-grouped-multiline">
+  {% for item in page.tagy %}
+  <div class="control">
+    <div class="tags has-addons is-hover{% if forloop.first %} selected{% endif %}" id="{{ item[2] }}">
+      <span class="tag{% if forloop.first %} is-link{% endif %}">{{ item[0] }}</span>
+      <span class="tag">{{ item[1] }}</span>
+    </div>
+  </div>
+  {% endfor %}
+
+  <div class="control">
+    <div class="tags has-addons start">
+      <span class="tag">
+        <span class="icon has-text-success">
+          <i class="fas fa-cogs"></i>
+        </span>
+      </span>
+      <span class="tag is-success has-text-weight-bold">START</span>
+    </div>
+  </div>
+</div>
 
 <script src="/assets/js/main_source.js"></script>
+
+<script>
+  init('{{ page.permalink }}');
+</script>

@@ -1,4 +1,8 @@
 (function () {
+  window.init = function (tool) {
+    console.log(tool);
+  };
+
   function selectorToArray(selector, parent) {
     parent = parent || document;
     return Array.prototype.slice.call(parent.querySelectorAll(selector), 0);
